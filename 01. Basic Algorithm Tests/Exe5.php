@@ -19,63 +19,11 @@ if else
 if
 */
 
-/*
-6. Write a PHP program to remove the character in a given position of a given string. The given position will be in the range 0..string length -1 inclusive.
-Sample Input:
-"Python", 1
-"Python", o
-"Python", 4
-Sample Output:
-Pthon
-ython
-Pythn
-*/
+function string_append($s){
+    #
+    return strpos($s, 'if') === 0 ? $s : "if ".$s;
+}
 
-/*
-7. Write a PHP program to exchange the first and last characters in a given string and return the new string.
-Sample Input:
-"abcd"
-"a"
-"xy"
-Sample output:
-dbca
-a
-yx
-*/
-
-/*
-8. Write a PHP program to create a new string which is 4 copies of the 2 front characters of a given string. If the given string length is less than 2 return the original string.
-Sample Input:
-"C Sharp"
-"JS"
-"a"
-Sample Output:
-C C C C
-JSJSJSJS
-a
-*/
-
-/*
-9. Write a PHP program to create a new string with the last char added at the front and back of a given string of length 1 or more.
-Sample Input:
-"Red"
-"Green"
-"1"
-Sample Output:
-dRedd
-nGreenn
-111
-Click me to see the sample solution
-
-10. Write a PHP program to check if a given positive number is a multiple of 3 or a multiple of 7.
-Sample Input
-3
-14
-12
-37
-Sample Output:
-bool(true)
-bool(true)
-bool(true)
-bool(false)
-*/
+print(string_append("if else") . "\n"); # Test 1
+print(string_append("else") . "\n");
+print(string_append("if") . "\n");
